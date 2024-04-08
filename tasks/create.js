@@ -9,7 +9,6 @@ fs.mkdir(dest, { recursive: true }, (err) => {
     if (err) throw err
 })
 
-
 // Pug file
 const pug = `
 ${filename}
@@ -27,7 +26,12 @@ extends /shared/layout.pug
 
 block head 
     link( rel="stylesheet" href="./index.css" )
-    script( type="module" src="./index.ts" )
+    script( type="module" src="../../shared/main.ts" defer )
+    script( type="module" src="./index.ts" defer )
+    script( type="module" ).
+        document.addEventListener('DOMContentLoaded', () => {
+            window.MFE.start()
+        })
 
 block content 
     include ./index.pug
@@ -57,11 +61,7 @@ fs.writeFile( `${dest}/index.css`, css, { encoding:'utf-8' }, (err) => {
 const js = `
 import * as app from './app'
 
-import('jails-js')
-    .then( ({ default: jails }) => {
-        jails.register('${filename}', app)
-        jails.start()
-    })
+window.MFE.register('${filename}', app, {})
 `
 
 fs.writeFile( `${dest}/index.ts`, js, { encoding:'utf-8' }, (err) => {
