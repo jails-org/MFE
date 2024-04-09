@@ -933,6 +933,11 @@
   resolved "https://registry.yarnpkg.com/@preact/signals-core/-/signals-core-1.6.0.tgz#f3e47b7cddab60e61a087c9b422a28f52e58ce20"
   integrity sha512-O/XGxwP85h1F7+ouqTMOIZ3+V1whfaV9ToIVcuyGriD4JkSD00cQo54BKdqjvBJxbenvp7ynfqRHEwI6e+NIhw==
 
+"@rive-app/canvas@^2.13.2":
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/@rive-app/canvas/-/canvas-2.13.2.tgz#29d76fbeccdcfdc8f0752a59f606952ffd9938d4"
+  integrity sha512-XeSD0VWT+oslMbsw2bdCc+glvLtCEoHemdc2UsUG+jZ5pfr67YxeUL7Pt57Pav2TOqAaYPvexUbENxKCTopK2A==
+
 "@rollup/rollup-android-arm-eabi@4.14.1":
   version "4.14.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.14.1.tgz#ca0501dd836894216cb9572848c5dde4bfca3bec"
@@ -2379,6 +2384,11 @@ svgo@^2.4.0:
     csso "^4.2.0"
     picocolors "^1.0.0"
     stable "^0.1.8"
+
+swiper@^11.1.1:
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-11.1.1.tgz#5efaa222d4a47a3ac75090cfc2fda6e53e564982"
+  integrity sha512-jGmEA/fNz1lACIcY4/40ggm1Gcyv+EUivmgV/Jd2WFPsEJhbWXnRAwzZR8OPjkBLtDxmzcoYG/iiAMWfRs0YKQ==
 
 term-size@^2.2.1:
   version "2.2.1"
