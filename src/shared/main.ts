@@ -8,16 +8,8 @@ window.MFE = {
     },
 
     install( origin ) {
-        
+
         const mfes = []
-            
-        const mainscript = new Promise((resolve) => {
-            const main = document.createElement('script')
-            main.defer = true 
-            main.src = `${origin}/main.js`
-            main.onload = resolve
-            document.head.appendChild( main )
-        })
         
         return {
             
@@ -31,18 +23,16 @@ window.MFE = {
     
                 fetch(`${origin}/${name}/index.html`)
                     .then( res => res.text() )
-                    .then(h => document.querySelector( target ).innerHTML = h )
+                    .then( h => document.querySelector( target ).innerHTML = h )
     
                 const app = document.createElement('script')
                 app.defer = true 
                 
                 mfes.push(
-                    mainscript.then(() => {
-                        return new Promise((resolve) => {
-                            app.src = `${origin}/${name}/index.js`
-                            app.onload = resolve
-                            document.head.appendChild( app )
-                        })
+                    new Promise((resolve) => {
+                        app.src = `${origin}/${name}/index.js`
+                        app.onload = resolve
+                        document.head.appendChild( app )
                     })
                 )
     
