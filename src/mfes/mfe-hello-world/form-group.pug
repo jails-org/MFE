@@ -3,6 +3,6 @@ mixin form-group({ type = 'text', label, name, validation })
     form( novalidate="novalidate" )
         form-validation
             label.d-block.form-label=label
-            input(type=type, name=name, data-validation="required", html-value=`form.fields.${name}`)
+            input(type=type, name=name, data-validation=validation, html-value=`form.fields.${name}`)
             p.text-danger(html-if=`form.errors.${name}` html-inner=`form.errors.${name}`)
         block 
