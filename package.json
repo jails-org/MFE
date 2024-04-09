@@ -4,6 +4,7 @@
   "repository": "git@github.com:Javiani/micro-frontends.git",
   "author": "Javiani <eduardo.ottaviani@gmail.com>",
   "license": "MIT",
+  "host":"https://mfe-jails.netlify.app",
   "scripts": {
     "dev": "NODE_ENV=dev parcel src/mfes/**/page.pug --no-cache",
     "build": "rm -rf ./dist && parcel build src/shared/main.ts && parcel build src/mfes/**/index.* --no-content-hash --no-cache",

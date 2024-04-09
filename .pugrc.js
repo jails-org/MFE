@@ -3,5 +3,6 @@ const environment = Object.assign({}, process.env.NODE_ENV == 'dev'? { developme
 module.exports = {
     basedir: './src',
     pretty : Boolean(environment.development),
-    locals : {}
+    locals : {
+    }
 }

@@ -1,7 +1,8 @@
 
 import jails from 'jails-js'
+import packagejson from '../../package.json'
 
-const origin = 'https://mfe-jails.netlify.app'
+const origin = packagejson.host
 const mfes = []
 
 window.MFE = {
