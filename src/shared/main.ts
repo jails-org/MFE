@@ -40,7 +40,7 @@ window.MFE = {
             },
     
             start() {
-                Promise.allSettled(mfes).then( _ => window.MFE.start() )
+                Promise.allSettled(mfes).then( _ => jails.start() )
             }
         }    
     }
