@@ -1,7 +1,7 @@
 import { Swiper } from 'swiper'
 import { animation } from './animation'
 
-export default async function helloWorld({ main, elm, on, state }) {
+export default async function helloWorld ({ main, elm, on, state }) {
 	//
 	const wrapper = elm.querySelector('.swiper')
 	const canvas = elm.querySelector('canvas')
@@ -10,7 +10,7 @@ export default async function helloWorld({ main, elm, on, state }) {
 
 	let formData = {}
 
-	main((_) => {
+	main( _ => {
 		//
 		on('input', 'input[type="text"]', ontextchange)
 		on('focus', 'input[type="text"]', ontextfocus)

@@ -4,13 +4,13 @@ mfe-hello-world
     
     h1.display-2.text-center Hello World
     
-    div.mfe-hello-world__preview
+    div.rounded-circle.position-relative.overflow-hidden.my-4( style="width:300px; height:300px" )
         canvas( width="320" height="350" )
     
-    div.swiper( html-static )
+    div.swiper.w-100.h-100( html-static )
         
         div.swiper-wrapper
-            
+
             section.swiper-slide
                 +form-group({ label: 'Username', name:'username', validation: 'required' })
                     section.d-flex.justify-content-between.my-3
@@ -34,5 +34,6 @@ mfe-hello-world
                         button.btn.btn-success.w-100(type="submit")
                             | Enviar
     
-    div(html-if="success")
-        pre ${JSON.stringify(formData, null, 4)}
+    template
+        div(html-if="success")
+            pre ${JSON.stringify(formData, null, 4)}
