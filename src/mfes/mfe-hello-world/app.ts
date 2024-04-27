@@ -1,5 +1,5 @@
 import { Swiper } from 'swiper'
-import { animation } from './animation'
+import { animation } from './utils/animation'
 
 export default async function helloWorld ({ main, elm, on, state }) {
 	//
