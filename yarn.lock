@@ -1580,10 +1580,10 @@ gopd@^1.0.1:
   dependencies:
     get-intrinsic "^1.1.3"
 
-grapnel@^0.7.6:
-  version "0.7.6"
-  resolved "https://registry.yarnpkg.com/grapnel/-/grapnel-0.7.6.tgz#0bf6e72b4add14e5ca2e9a478bfb1257fc210c3c"
-  integrity sha512-SSJGpPT+QCfL9q/t1Cgvk3Z13rsjeAtlBmLE0yXy4s/qVbqwx34A+NS/Bj5HHHHuHcQT3WeWtr8Az5MUprPvdQ==
+grapnel@0.6.4:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/grapnel/-/grapnel-0.6.4.tgz#cc5ab40cd83d3a31b830d7d94449ce81ba684576"
+  integrity sha512-xgxJZVF2OYjbltSOkEV7uoYKAxQBzWOPr6sN9uAGC+ype/oHa5jYe+vtOqe9li4B32NXAyHJAyntWllxZ1HksA==
 
 has-flag@^3.0.0:
   version "3.0.0"
@@ -1644,6 +1644,11 @@ htmlparser2@^7.1.1:
     domhandler "^4.2.2"
     domutils "^2.8.0"
     entities "^3.0.1"
+
+idiomorph@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/idiomorph/-/idiomorph-0.3.0.tgz#f6675bc5bef1a72c94021e43141a3f605d2d6288"
+  integrity sha512-UhV1Ey5xCxIwR9B+OgIjQa+1Jx99XQ1vQHUsKBU1RpQzCx1u+b+N6SOXgf5mEJDqemUI/ffccu6+71l2mJUsRA==
 
 import-fresh@^3.3.0:
   version "3.3.0"
@@ -1727,22 +1732,22 @@ jackspeak@^2.3.6:
   optionalDependencies:
     "@pkgjs/parseargs" "^0.11.0"
 
-jails-js@^5.7.1:
-  version "5.7.1"
-  resolved "https://registry.yarnpkg.com/jails-js/-/jails-js-5.7.1.tgz#5735e8f1735cb29beba4fca2b0b448dd0642c594"
-  integrity sha512-cvtlfCt8m0R4V9DcSV901IX9r3cVHcALbL8XuPIcyWDWJQ5ReS0kRN+FCAv0OS8oBPx92jF3mLwBeJ72vVv02Q==
+jails-js@^5.8.0:
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/jails-js/-/jails-js-5.8.0.tgz#8ead9826be4b5ba1498d93d5c3c6370421823ea9"
+  integrity sha512-swwFeFXTSjsIGYBuMgZpKtFoWtEX00+o/7UcF18KVHekEcSBuOUVsJM/XZPY3jo7i0rbG29xOX2adhplJvNS5g==
   dependencies:
-    morphdom "^2.7.2"
+    idiomorph "^0.3.0"
 
-jails.pandora@^1.0.1:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/jails.pandora/-/jails.pandora-1.0.7.tgz#374a66d02f5f91fbeccb984e866e59234a3e6e84"
-  integrity sha512-rf7YHrp9FwkX2josQ7K2OzQC91/xzE4KMbPJvkL4MQGZyFoQAaraJbCdIqojna4Nm5A71bH5Eg0b9HFMxAU6Xg==
+jails.pandora@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/jails.pandora/-/jails.pandora-1.0.9.tgz#faa17f6c4b42e3ad55e68b8b17de4288321a75e1"
+  integrity sha512-kJVzWldDJ+/nuKRMce7Gba1Nac0HecapcWQq4iqwAuXKzIho9qyn6knAncff+mG4gK6a9IFzjD5Nekfr72bCqA==
   dependencies:
     "@preact/signals-core" "^1.5.1"
     "@types/node" "^20.10.7"
     glob "^10.3.10"
-    grapnel "^0.7.6"
+    grapnel "0.6.4"
     vite "^5.0.11"
 
 js-stringify@^1.0.2:
@@ -1901,11 +1906,6 @@ minimatch@^9.0.1:
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-7.0.4.tgz#dbce03740f50a4786ba994c1fb908844d27b038c"
   integrity sha512-jYofLM5Dam9279rdkWzqHozUo4ybjdZmCsDHePy5V/PbBcVMiSZR97gmAy45aqi8CK1lG2ECd356FU86avfwUQ==
-
-morphdom@^2.7.2:
-  version "2.7.2"
-  resolved "https://registry.yarnpkg.com/morphdom/-/morphdom-2.7.2.tgz#d48a87254f9b3031c0e1ec367736721fbaf22167"
-  integrity sha512-Dqb/lHFyTi7SZpY0a5R4I/0Edo+iPMbaUexsHHsLAByyixCDiLHPHyVoKVmrpL0THcT7V9Cgev9y21TQYq6wQg==
 
 msgpackr-extract@^3.0.2:
   version "3.0.2"
