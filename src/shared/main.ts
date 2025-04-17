@@ -1,5 +1,5 @@
 
-import jails from 'jails-js'
+import { register, start } from 'jails-js'
 import packagejson from '../../package.json'
 
 const origin = packagejson.host
@@ -8,7 +8,7 @@ const mfes = []
 window.MFE = {
 
     register( name, module, dependencies ) {
-        jails.register( name, module, dependencies )
+        register( name, module, dependencies )
     },
 
     add( name, target ) {
@@ -38,6 +38,6 @@ window.MFE = {
     },
 
     start() {
-        Promise.allSettled(mfes).then( _ => jails.start() )
+        Promise.allSettled(mfes).then( _ => start() )
     }
 }

@@ -1659,10 +1659,10 @@ htmlparser2@^9.0.0:
     domutils "^3.1.0"
     entities "^4.5.0"
 
-idiomorph@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/idiomorph/-/idiomorph-0.3.0.tgz#f6675bc5bef1a72c94021e43141a3f605d2d6288"
-  integrity sha512-UhV1Ey5xCxIwR9B+OgIjQa+1Jx99XQ1vQHUsKBU1RpQzCx1u+b+N6SOXgf5mEJDqemUI/ffccu6+71l2mJUsRA==
+idiomorph@^0.7.2:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/idiomorph/-/idiomorph-0.7.3.tgz#50f9a30ce5bdb4a2937153b3cbca24b8a0361b95"
+  integrity sha512-YI/L1QQkBRDtiaGZN+/KolIkNoZuIsCgus1ciueosiqdyWz/weeP+ghFgDQpk2vzA3BkX6/M/kY5SCM03LBDkA==
 
 import-fresh@^3.3.0:
   version "3.3.0"
@@ -1746,12 +1746,12 @@ jackspeak@^2.3.6:
   optionalDependencies:
     "@pkgjs/parseargs" "^0.11.0"
 
-jails-js@^5.8.3:
-  version "5.8.3"
-  resolved "https://registry.yarnpkg.com/jails-js/-/jails-js-5.8.3.tgz#4d5caf395bc6a950fe665fa0787425c1ab3eac83"
-  integrity sha512-AKMBHRvRi1Su4Af2yxLjyGoHipjn5hARbzVAEypgz8ObZuVPcKZmZOnei0jxYLLIv63/UEFmnu1BQH2bHOh8uQ==
+jails-js@^6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/jails-js/-/jails-js-6.0.4.tgz#f925eb4bd9be9fcad938a01e00f5e2e2d014235b"
+  integrity sha512-sacTchwKhELBZ1Is75Uau/Lczg7WAKoqa2q/8Yh7aR1B/hx87QYDxl4thCEyel0OSHWOcy/B56TBiBMGyWh6qQ==
   dependencies:
-    idiomorph "^0.3.0"
+    idiomorph "^0.7.2"
 
 jails.pandora@^1.1.1:
   version "1.1.1"
