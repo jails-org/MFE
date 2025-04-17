@@ -1,6 +1,6 @@
 
 import * as app from './app'
-import * as formValidation from 'jails.pandora/form-validation'
+import * as formValidation from 'jails.std/form-validation'
 import validation from './utils/validation'
 
 window.MFE.register('form-validation', formValidation, { ...validation })
