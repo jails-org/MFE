@@ -10,11 +10,12 @@ head
 		link( rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.min.css" ) 
 		link( rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css")
 
-	//- Web Component assets
+	//- Web Component Css
 	link( rel="stylesheet" href="./index.css" )
-	
+
+	//- Web Component Dependencies
 	script( type="module" ).
-		import { appSwiper } from './index.mjs'
+		import * as appSwiper from './app.ts'
 		import { register, start } from 'jails-js'
 		import Swiper from 'swiper'
 		document.addEventListener('DOMContentLoaded', () => {

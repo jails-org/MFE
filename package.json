@@ -7,7 +7,7 @@
   "host": "https://mfe-jails.netlify.app",
   "scripts": {
     "dev": "NODE_ENV=dev parcel src/mfes/**/page.pug --no-cache",
-    "build": "rm -rf ./dist && parcel build src/shared/main.ts && parcel build src/mfes/**/*.{css,ts,pug} --no-content-hash --no-cache",
+    "build": "rm -rf ./dist && parcel build src/shared/main.ts && parcel build src/mfes/**/*.{css,ts,mjs,pug} --no-content-hash --no-cache",
     "create:mfe": "node tasks/create"
   },
   "devDependencies": {

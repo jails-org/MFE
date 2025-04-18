@@ -1,1 +1,3 @@
-export * as appSwiper from './app'
+import * as appSwiper from './app'
+export default appSwiper
+
