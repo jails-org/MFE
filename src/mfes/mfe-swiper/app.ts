@@ -1,9 +1,8 @@
 
-import Swiper from 'swiper'
-
-export default function appSwiper ({ main, on, elm, state }) {
+export default function appSwiper ({ main, on, elm, state, dependencies }) {
 
 	const wrapper = elm.querySelector('.swiper')
+	const { Swiper } = dependencies
 	const swiper = new Swiper(wrapper)
 
 	main((_) => {
