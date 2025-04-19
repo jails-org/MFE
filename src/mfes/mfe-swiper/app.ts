@@ -12,7 +12,7 @@ export default function appSwiper ({ main, on, elm, state, dependencies }) {
 	})
 
 	const onchange = (e) => {
-		state.set({ page: swiper.activeIndex - 1 })
+		state.set({ page: swiper.activeIndex })
 	}
 
 	elm.next = () => {
