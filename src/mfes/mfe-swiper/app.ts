@@ -11,8 +11,8 @@ export default function appSwiper ({ main, on, elm, state, dependencies }) {
 		swiper.on('slideChange', onchange)
 	})
 
-	const onchange = (e) => {
-		state.set({ page: swiper.activeIndex })
+	const onchange = (instance) => {
+		state.set({ page: instance.activeIndex + 1 })
 	}
 
 	elm.next = () => {
