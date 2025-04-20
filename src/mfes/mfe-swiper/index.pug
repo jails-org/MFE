@@ -1,12 +1,19 @@
 
 app-swiper 
-	div.swiper( html-static )
-		div.swiper-wrapper
-			div.swiper-slide Slide 1
-			div.swiper-slide Slide 2
-			div.swiper-slide Slide 3
-			div.swiper-slide Slide 4
-			div.swiper-slide Slide 5
-		div.d-flex.justify-content-between
-			button.btn.btn-primary( data-prev ) Previous
-			button.btn.btn-primary( data-next ) Próximo
+	div.container
+		button.btn.btn-prev( data-prev ) ‹
+		div.swiper( html-static )
+			div.swiper-wrapper
+				div.swiper-slide 
+					img( src="https://picsum.photos/800/300?random=1" )
+				div.swiper-slide 
+					img( src="https://picsum.photos/800/300?random=2" )
+				div.swiper-slide  
+					img( src="https://picsum.photos/800/300?random=3" )
+				div.swiper-slide 
+					img( src="https://picsum.photos/800/300?random=4" )
+				div.swiper-slide 
+					img( src="https://picsum.photos/800/300?random=5" )
+				div.swiper-slide 
+					img( src="https://picsum.photos/800/300?random=6" )
+		button.btn.btn-next( data-next ) ›
