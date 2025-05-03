@@ -10,16 +10,15 @@ head
 
 	//- Web Component Css
 	link( rel="stylesheet" href="./index.css" )
+		
+body
+	include ./index.pug
 
 	//- Web Component Dependencies
 	script( type="module" ).
 		import * as appSwiper from './app'
 		import { register, start } from 'jails-js'
 		import Swiper from 'swiper'
-		document.addEventListener('DOMContentLoaded', () => {
-			register('app-swiper', appSwiper, { Swiper })
-			start()
-		})
 		
-body
-	include ./index.pug
+		register('app-swiper', appSwiper, { Swiper })
+		start()
