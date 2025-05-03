@@ -5,10 +5,12 @@ block head
     link( rel="stylesheet" href="./index.css" )
     script( type="module" src="../../shared/main.ts" defer )
     script( type="module" src="./index.ts" defer )
-    script( type="module" ).
-        document.addEventListener('DOMContentLoaded', () => {
-            window.MFE.start()
-        })
 
 block content
     include ./index.pug
+    script( type="module" ).
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => window.MFE.start())
+        } else {
+            window.MFE.start()
+        }
