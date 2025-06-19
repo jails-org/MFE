@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "@rive-app/canvas": "^2.13.2",
-    "jails-js": "^6.0.4",
-    "jails.std": "^0.1.4",
+    "jails-js": "^6.3.3",
+    "jails.std": "^0.2.5",
     "swiper": "^11.2.6"
   }
 }
