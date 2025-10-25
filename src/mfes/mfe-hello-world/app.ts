@@ -19,8 +19,6 @@ export default async function helloWorld ({ main, elm, on, state }) {
 		on('click', 'button[data-reset]', onReset)
 		on('form-validation:submit', 'form', submit)
 		on('click', '[data-prev]', prev)
-
-		swiper.on('transitionEnd', onslidechange)
 	})
 
 	const ontextchange = (e) => {
@@ -42,13 +40,6 @@ export default async function helloWorld ({ main, elm, on, state }) {
 
 	const onReset = (e) => {
 		checking.value = false
-	}
-
-	const onslidechange = (swiper) => {
-		const index = swiper.activeIndex
-		const current = swiper.slides[index]
-		const input = current.querySelector('input')
-		input.focus()
 	}
 
 	const submit = (e, { data }) => {
